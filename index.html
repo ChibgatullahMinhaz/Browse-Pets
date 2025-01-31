@@ -35,28 +35,32 @@
 </head>
 <body class="font-sora">
    <header class="">
-    <nav class="flex justify-between bg-[#FFF9F4] px-20 py-4 items-center">
+    <nav class="flex justify-between bg-[#FFF9F4] px-4 md:px-20 py-4 items-center">
         <!-- logo  -->
          <div class="flex gap-2 justify-center items-center">
-            <img src="assets/logo-header.png" alt="wbsite logo">
+            <img  src="assets/logo-header.png" alt="wbsite logo">
+           <div class="hidden lg:block">
             <h1 class="font-sora md:text-2xl text-xl font-bold">Browse <span class="text-[#FFDC26]">4</span> Pets</h1>
+           </div>
          </div>
          <!-- menu -->
-          <ul class="  flex justify-between space-x-6">
+         <div class="hidden sm:block">
+          <ul class="  flex justify-between space-x-6  ">
             <li> <a class="font-sora text-xl" href="#">Find a pet</a> </li>
             <li> <a class="font-sora text-xl" href="#">Breeds</a> </li>
             <li> <a class="font-sora text-xl" href="#">Contact us</a> </li>
           </ul>
+         </div>
           <!-- nav buttons and search -->
-           <div class="space-x-4 font-sora">
+           <div class="space-x-4 font-sora hidden sm:block " >
             <i class="fa-regular fa-bell text-lg cursor-pointer"></i>
             <i class="fa-solid fa-magnifying-glass text-lg cursor-pointer"></i>
             <button class="btn border-2 border-yellow-500 btn-outline  ">Login</button>
             <button class="btn bg-[#FFDC26] hover:bg-neutral hover:text-white ">Register</button>
            </div>
            <!-- menu icon -->
-            <div class="block sm:hidden">
-                <i class="fa-solid fa-bars"></i>
+            <div class="block sm:hidden cursor-pointer">
+                <i class="fa-solid fa-bars text-2xl"></i>
             </div>
     </nav>
    </header>
